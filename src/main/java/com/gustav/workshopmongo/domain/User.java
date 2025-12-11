@@ -19,7 +19,7 @@ public class User implements Serializable {
 	private String name;
 	private String email;
 
-    @DBRef(lazy = true)
+    @DBRef(lazy = true) // Faz salvar a referencia do post é não ele inteiro
     private List<Post> pots = new ArrayList<>();
 	
 	public User() {
